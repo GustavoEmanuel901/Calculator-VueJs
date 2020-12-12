@@ -6,7 +6,7 @@
       <Data label='7' @onCalcButtonClick='addDigit'/>
       <Data label='8' @onCalcButtonClick='addDigit'/>
       <Data label='9' @onCalcButtonClick='addDigit'/>
-      <Data label='x' operation @onCalcButtonClick='setOperation'/>
+      <Data label='*' operation @onCalcButtonClick='setOperation'/>
       <Data label='4' @onCalcButtonClick='addDigit'/>
       <Data label='5' @onCalcButtonClick='addDigit'/>
       <Data label='6' @onCalcButtonClick='addDigit'/>
@@ -48,6 +48,7 @@
                 } else {
                     const equals = operation === '='
                     const currentOperation = this.operation
+                    console.log(currentOperation)
 
                     try {
                         this.values[0] = eval(
